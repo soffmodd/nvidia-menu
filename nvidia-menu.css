@@ -19,7 +19,7 @@ ul.dropdown ul {
 }
 
 ul.dropdown {
- position: fixed !importtant;
+ position: fixed !important;
  /*z-index: 597;*/
  float: left;
  top:0px !important;
