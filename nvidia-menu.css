@@ -4,8 +4,8 @@
 .container { padding: 0px; }
 
 .horizontal-centering { background:#000 repeat-x fixed; position:fixed; width:100%; }
-.horizontal-centering > * > * { float: left; width: auto; left: 50%; margin: 0; padding: 0; position:fixed; }
-.horizontal-centering > * > * > * { float: left; right: 50%; position:fixed; }
+.horizontal-centering > * > * { float: left; width: auto; left: 50%; margin: 0; padding: 0; position: relative;  }
+.horizontal-centering > * > * > * { float: left; right: 50%; position: relative;  }
 /**
  * Horizontal CSS Drop-Down Menu Module
  */
@@ -19,9 +19,13 @@ ul.dropdown ul {
 }
 
 ul.dropdown {
- /*position: fixed !important;*/
- /*z-index: 597;*/
- /*float: left;*/
+ position: fixed;
+ z-index: 597;
+ float: left;
+ width:100%;
+ background:#000;
+ top:0;
+ left:0;
 }
 
 ul.dropdown li {
@@ -33,17 +37,17 @@ ul.dropdown li {
 
 ul.dropdown li.hover,
 ul.dropdown li:hover {
- /*position: relative;*/
- /*z-index: 599;*/
+ position: relative;
+ z-index: 599;
  cursor: default;
 }
 
 ul.dropdown ul {
  visibility: hidden;
- /*position: absolute;*/
+ position: absolute;
  top: 100% 0px;
  left: 0;
- /*z-index: 598;*/
+ z-index: 598;
  width: 100%;
 }
 
