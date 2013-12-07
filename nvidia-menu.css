@@ -4,8 +4,8 @@
 .container { padding: 0px; }
 
 .horizontal-centering { background:#000 repeat-x fixed; position:fixed; width:100%; top:0px; z-index:999; }
-.horizontal-centering > * { float: left; width: auto; left: 50%; right: 50%;  margin: 0; padding: 0; position: relative;  }
-.horizontal-centering > * > * { float: left;   position: relative;  }
+.horizontal-centering * { float: left; width: auto; left: 50%;  margin: 0; padding: 0; position: relative;  }
+.horizontal-centering > * { float: left; right: 50%;  position: relative;  }
 
 /**
  * Horizontal CSS Drop-Down Menu Module
