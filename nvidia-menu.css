@@ -3,9 +3,10 @@
 .wrapper { min-height: 100%; width: 100%; overflow: hidden; }
 .container { padding: 0px; }
 
-.horizontal-centering { background:#000 repeat-x fixed; position:fixed; width:100%;  z-index: 999; top:0px; }
-.horizontal-centering { float: left; width: auto; left: 50%; margin: 0; padding: 0; position: relative;  }
-.horizontal-centering { float: left; right: 50%; position: relative;  }
+.horizontal-centering { background:#000 repeat-x fixed; position:fixed; width:100%;  z-index: 999; 
+top:0px; left: 50%; right: 50%; }
+.horizontal-centering { float: left; width: auto;  margin: 0; padding: 0; position: relative;  }
+.horizontal-centering { float: left;  position: relative;  }
 
 /**
  * Horizontal CSS Drop-Down Menu Module
@@ -44,7 +45,7 @@ ul.dropdown li:hover {
 ul.dropdown ul {
  visibility: hidden;
  position: absolute;
- top: 100% 0px;
+ /*top: 100% 0px;*/
  left: 0;
  z-index: 598;
  width: 100%;
@@ -55,7 +56,7 @@ ul.dropdown ul li {
 }
 
 ul.dropdown ul ul {
- top: 0px;
+ /*top: 0px;*/
  left: 99%;
 }
 
